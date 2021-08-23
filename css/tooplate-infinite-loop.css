@@ -159,13 +159,6 @@ blockquote {
   }
 }
 
-/* changeTest */
-@media (min-height: 680px) and (max-height: 829px) {
-  #infinite {
-    background-position: center -300px;
-  }
-}
-
 @media (min-height: 830px) {
   #infinite {
     background-position: center -210px;
@@ -181,6 +174,12 @@ blockquote {
 @media (min-height: 500px) and (max-height: 679px) {
   #infinite {
     background-position: center -400px;
+  }
+}
+/* changeTest */
+@media (min-height: 680px) and (max-height: 829px) {
+  #infinite {
+    background-position: center -300px;
   }
 }
 
