@@ -134,12 +134,8 @@ blockquote {
   padding-top: 6px;
 }
 
-.tm-navbar.scroll button{
-  border:1px solid #707070;
-}
-
 .tm-navbar.scroll .navbar-toggler {
-  border: 1px solid #000;
+  border:1px solid #707070;
 }
 
 .tm-navbar.scroll .navbar-toggler-icon {
