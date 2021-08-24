@@ -446,10 +446,10 @@ https://www.tooplate.com/view/2117-infinite-loop
           }
         });
         
-        // // Close mobile menu after click 
-        // $('#tmNav a').on('click', function(){
-        //   $('.navbar-collapse').removeClass('show'); 
-        // })
+        // Close mobile menu after click 
+        $('body').on('click', function(){
+          $('.navbar-collapse').removeClass('show'); 
+        })
 
         // Scroll to corresponding section with animation
         $('#tmNav').singlePageNav({
