@@ -626,6 +626,15 @@ p {
   }
 }
 
+@media (min-width: 1024px) {
+  .navbar-expand-md .navbar-toggler {
+    display: none;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1275px;
