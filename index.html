@@ -438,17 +438,17 @@ https://www.tooplate.com/view/2117-infinite-loop
 
         // Media Queries menu
 
-        var mediaMenu = window.matchMedia("(max-width: 1024px)")
-        resizeMenu(mediaMenu) 
-        mediaMenu.addListener(resizeMenu) 
+        // var mediaMenu = window.matchMedia("(max-width: 1024px)")
+        // resizeMenu(mediaMenu) 
+        // mediaMenu.addListener(resizeMenu) 
 
-        function resizeMenu(mediaMenu) {
-          if (mediaMenu.matches) { 
-            $(".collapse ").css("display", "none");
-          } else {
-            $(".collapse ").css("display", "flex");
-          }
-        }
+        // function resizeMenu(mediaMenu) {
+        //   if (mediaMenu.matches) { 
+        //     $(".collapse ").css("display", "none");
+        //   } else {
+        //     $(".collapse ").css("display", "flex");
+        //   }
+        // }
 
         // Detect window scroll and update navbar
         $(window).scroll(function(e){          
