@@ -76,15 +76,16 @@ blockquote {
 
 /* Navbar */
 
+#logoMobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   #logoDesk {
     display: none;
   }
-}
-
-@media (min-width: 768px) {
   #logoMobile {
-    display: none;
+    display: block;
   }
 }
 
