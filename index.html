@@ -300,15 +300,6 @@ https://www.tooplate.com/view/2117-infinite-loop
             </div>
             
             <div class="col-sm-12 col-md-6">
-              <form action="" method="get">
-                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
-                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
-                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
-            </div>
-            
-            <div class="col-sm-12 col-md-6">
 
                 <div class="contact-item">
                   <a rel="nofollow" href="https://www.tooplate.com/contact" class="item-link">
@@ -341,6 +332,15 @@ https://www.tooplate.com/view/2117-infinite-loop
                 <div class="contact-item">&nbsp;</div>
             
             </div>
+
+            <div class="col-sm-12 col-md-6">
+              <form action="" method="get">
+                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
+                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
+                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
+                <button type="submit" class="btn tm-btn-submit">Submit</button>
+              </form>
+            </div>
             
             
         </div><!-- row ending -->
@@ -363,6 +363,17 @@ https://www.tooplate.com/view/2117-infinite-loop
     <script src="js/jquery.singlePageNav.min.js"></script>     
     <script src="js/bootstrap.min.js"></script> 
     <script>
+
+    const popups = document.getElementById("navbarSupportedContent");
+
+    window.addEventListener('click', ({ target }) => {
+      const popup = target.closest('#navbarSupportedContent');
+      const clickedOnClosedPopup = popup && !popup.classList.contains('show');
+      
+      popups.forEach(p => p.classList.remove('show'));
+      
+      if (clickedOnClosedPopup) popup.classList.add('show');  
+    });
 
       function getOffSet(){
         var _offset = 450;
@@ -444,10 +455,10 @@ https://www.tooplate.com/view/2117-infinite-loop
           } else {
             $('.tm-navbar').removeClass("scroll");
           }
-        });
-        
+        });        
+
         // Close mobile menu after click 
-        $('body, #tmNav a').on('click', function(){
+        $('#tmNav a').on('click', function(){
           $('.navbar-collapse').removeClass('show'); 
         });
 

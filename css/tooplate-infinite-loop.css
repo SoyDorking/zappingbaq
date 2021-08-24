@@ -80,7 +80,7 @@ blockquote {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   #logoDesk {
     display: none;
   }
@@ -558,7 +558,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-input {
 	margin: 0 0 20px 0;
-	width: 90%;
+	width: 100%;
   padding: 8px 20px;
   border-radius: 6px;
   border: 1px solid white;
@@ -570,7 +570,7 @@ figure.effect-honey:hover h2 i {
 	font-size: 0.9em;
 	color: #fff;
 	background-color: #369;
-	width: 50%;
+	width: 100%;
 	margin-bottom: 60px;
 }
 
@@ -671,10 +671,10 @@ p {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
 
   .navbar-nav {
-    max-width: 200px;
+    max-width: 100%;
     text-align: right;
   }
 
@@ -686,7 +686,9 @@ p {
 
   .navbar-collapse .nav-link {
     color: #707070;
-	  padding-right: 20px;
+    padding-right: 15px;
+    float: left;
+    padding-left: 15px;
   }
 }
 
