@@ -267,8 +267,9 @@ blockquote {
 #testimonials {
   color: white;
   background-image: url(../img/infinite-loop-02.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: 100%;
+  position:relative;
 }
 
 @media (max-width: 991px) {
@@ -655,7 +656,7 @@ p {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
   .navbar-nav {
     max-width: 200px;
