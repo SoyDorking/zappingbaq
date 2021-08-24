@@ -25,7 +25,7 @@ https://www.tooplate.com/view/2117-infinite-loop
       <nav class="navbar navbar-expand-lg tm-navbar" id="tmNav">              
         <div class="container">   
                    
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" id="toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars navbar-toggler-icon"></i>
           </button>
 
@@ -300,15 +300,6 @@ https://www.tooplate.com/view/2117-infinite-loop
             </div>
             
             <div class="col-sm-12 col-md-6">
-              <form action="" method="get">
-                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
-                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
-                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
-            </div>
-            
-            <div class="col-sm-12 col-md-6">
 
                 <div class="contact-item">
                   <a rel="nofollow" href="https://www.tooplate.com/contact" class="item-link">
@@ -340,6 +331,15 @@ https://www.tooplate.com/view/2117-infinite-loop
                 
                 <div class="contact-item">&nbsp;</div>
             
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <form action="" method="get">
+                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
+                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
+                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
+                <button type="submit" class="btn tm-btn-submit">Submit</button>
+              </form>
             </div>
             
             
@@ -432,10 +432,19 @@ https://www.tooplate.com/view/2117-infinite-loop
         background_image_parallax_2($("#contact"), 0.80);   
         background_image_parallax_2($("#testimonials"), 0.80);   
         
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
+        // // Handle window resize
+        // window.addEventListener('resize', function(){
+        //   background_image_parallax($(".tm-parallax"), 0.30, true);
+        // }, true);
+
+        // Close menu Outside click
+        const navbarSupportedContent = document.getElementById("navbarSupportedContent");
+          document.onclick = function(e){
+            if(e.target.id !== 'navbarSupportedContent')
+            {
+              navbarSupportedContent.classList.remove('show');
+            }
+        }
 
         // Detect window scroll and update navbar
         $(window).scroll(function(e){          
@@ -444,18 +453,18 @@ https://www.tooplate.com/view/2117-infinite-loop
           } else {
             $('.tm-navbar').removeClass("scroll");
           }
-        });
-        
+        });        
+
         // Close mobile menu after click 
         $('#tmNav a').on('click', function(){
           $('.navbar-collapse').removeClass('show'); 
-        })
+        });
 
         // Scroll to corresponding section with animation
         $('#tmNav').singlePageNav({
           'easing': 'easeInOutExpo',
           'speed': 600
-        });        
+        }); 
         
         // Add smooth scrolling to all links
         // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp

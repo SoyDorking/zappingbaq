@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-    <!-- <link rel="stylesheet" href="css/very-messy.css" /> -->
+    <link rel="stylesheet" href="css/very-messy.css" />
 <!--
 Tooplate 2117 Infinite Loop
 https://www.tooplate.com/view/2117-infinite-loop
@@ -436,7 +436,7 @@ https://www.tooplate.com/view/2117-infinite-loop
         // window.addEventListener('resize', function(){
         //   background_image_parallax($(".tm-parallax"), 0.30, true);
         // }, true);
-
+        
         // Close menu Outside click
         const navbarSupportedContent = document.getElementById("navbarSupportedContent");
           document.onclick = function(e){
@@ -453,18 +453,18 @@ https://www.tooplate.com/view/2117-infinite-loop
           } else {
             $('.tm-navbar').removeClass("scroll");
           }
-        });        
-
+        });
+        
         // Close mobile menu after click 
         $('#tmNav a').on('click', function(){
           $('.navbar-collapse').removeClass('show'); 
-        });
+        })
 
         // Scroll to corresponding section with animation
         $('#tmNav').singlePageNav({
           'easing': 'easeInOutExpo',
           'speed': 600
-        }); 
+        });        
         
         // Add smooth scrolling to all links
         // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp

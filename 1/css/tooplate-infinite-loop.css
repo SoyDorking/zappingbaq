@@ -76,6 +76,19 @@ blockquote {
 
 /* Navbar */
 
+#logoMobile {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  #logoDesk {
+    display: none;
+  }
+  #logoMobile {
+    display: block;
+  }
+}
+
 .tm-navbar {
   position: fixed;
   width: 100%;
@@ -135,7 +148,7 @@ blockquote {
 }
 
 .tm-navbar.scroll .navbar-toggler {
-  border: 1px solid #000;
+  border: 1px solid #707070;
 }
 
 .tm-navbar.scroll .navbar-toggler-icon {
@@ -148,6 +161,9 @@ blockquote {
 	background-color: #222;
   background-image: url(../img/infinite-loop-01.jpg);
   height: 100vh;
+  background-repeat: no-repeat;
+  min-height:375px;
+  position: relative;
 }
 
 @media (min-height: 600px) and (min-width: 1920px) {
@@ -159,6 +175,18 @@ blockquote {
 @media (min-height: 830px) {
   #infinite {
     background-position: center -210px;
+  }
+}
+
+@media (min-height: 680px) and (max-height: 829px) {
+  #infinite {
+   background-position: center -300px;
+  }
+}
+
+@media (min-height: 500px) and (max-height: 679px) {
+  #infinite {
+    background-position: center -400px;
   }
 }
 
@@ -254,8 +282,9 @@ blockquote {
 #testimonials {
   color: white;
   background-image: url(../img/infinite-loop-02.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: 100%;
+  position:relative;
 }
 
 @media (max-width: 991px) {
@@ -529,7 +558,7 @@ figure.effect-honey:hover h2 i {
 
 .tm-input {
 	margin: 0 0 20px 0;
-	width: 90%;
+	width: 100%;
   padding: 8px 20px;
   border-radius: 6px;
   border: 1px solid white;
@@ -541,7 +570,7 @@ figure.effect-honey:hover h2 i {
 	font-size: 0.9em;
 	color: #fff;
 	background-color: #369;
-	width: 50%;
+	width: 100%;
 	margin-bottom: 60px;
 }
 
@@ -601,7 +630,7 @@ p {
     padding-left: 0px;
   }
 
-  .navbar-expand-md .navbar-nav .nav-link {
+  .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -642,10 +671,10 @@ p {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 990px) {
 
   .navbar-nav {
-    max-width: 200px;
+    max-width: 100%;
     text-align: right;
   }
 
@@ -657,7 +686,9 @@ p {
 
   .navbar-collapse .nav-link {
     color: #707070;
-	padding-right: 20px;
+    padding-right: 15px;
+    float: left;
+    padding-left: 15px;
   }
 }
 
