@@ -614,9 +614,9 @@ p {
     padding-left: 0px;
   }
 
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 15px;
-    padding-left: 15px;
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
@@ -670,7 +670,7 @@ p {
 
   .navbar-collapse .nav-link {
     color: #707070;
-	padding-right: 20px;
+	  padding-right: 20px;
   }
 }
 
