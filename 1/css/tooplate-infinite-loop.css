@@ -633,7 +633,7 @@ p {
     padding-left: 0px;
   }
 
-  .navbar-expand-md .navbar-nav .nav-link {
+  .navbar-expand-md .navbar-nav a {
     padding-right: 30px;
     padding-left: 30px;
   }
