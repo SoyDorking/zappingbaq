@@ -76,6 +76,12 @@ blockquote {
 
 /* Navbar */
 
+@media (max-width: 768px) {
+  #logoDesk {
+    display: none;
+  }
+}
+
 .tm-navbar {
   position: fixed;
   width: 100%;
