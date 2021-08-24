@@ -447,6 +447,10 @@ https://www.tooplate.com/view/2117-infinite-loop
         });
         
         // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show'); 
+        });
+
         $('body').on('click', function(){
           $('.navbar-collapse').removeClass('show'); 
         })
@@ -455,7 +459,7 @@ https://www.tooplate.com/view/2117-infinite-loop
         $('#tmNav').singlePageNav({
           'easing': 'easeInOutExpo',
           'speed': 600
-        });        
+        }); 
         
         // Add smooth scrolling to all links
         // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
