@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-
+    <link rel="stylesheet" href="css/very-messy.css" />
 <!--
 Tooplate 2117 Infinite Loop
 https://www.tooplate.com/view/2117-infinite-loop
@@ -22,11 +22,17 @@ https://www.tooplate.com/view/2117-infinite-loop
     <!-- Hero section -->
     <section id="infinite" class="text-white tm-font-big tm-parallax">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg tm-navbar" id="tmNav">              
-        <div class="container">  
-
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+              <a href="#infinite" class="navbar-brand">Infinite Loop</a>
+          </div>             
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#infinite">Home</a>
               </li>
@@ -43,16 +49,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                   <a class="nav-link tm-nav-link" href="#contact">Contact</a>
               </li>                    
             </ul>
-          </div> 
-          
-          <div class="tm-next">
-              <a href="#infinite" class="navbar-brand">Infinite Loop</a>
-          </div>             
-            
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-                 
+          </div>        
         </div>
       </nav>
       
@@ -430,11 +427,10 @@ https://www.tooplate.com/view/2117-infinite-loop
         background_image_parallax_2($("#contact"), 0.80);   
         background_image_parallax_2($("#testimonials"), 0.80);   
         
-        // changeTest
-        // // Handle window resize
-        // window.addEventListener('resize', function(){
-        //   background_image_parallax($(".tm-parallax"), 0.30, true);
-        // }, true);
+        // Handle window resize
+        window.addEventListener('resize', function(){
+          background_image_parallax($(".tm-parallax"), 0.30, true);
+        }, true);
 
         // Detect window scroll and update navbar
         $(window).scroll(function(e){          
