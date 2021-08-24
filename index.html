@@ -22,7 +22,7 @@ https://www.tooplate.com/view/2117-infinite-loop
     <!-- Hero section -->
     <section id="infinite" class="text-white tm-font-big tm-parallax">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+      <nav class="navbar navbar-expand-lg tm-navbar" id="tmNav">              
         <div class="container">  
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -435,20 +435,6 @@ https://www.tooplate.com/view/2117-infinite-loop
         // window.addEventListener('resize', function(){
         //   background_image_parallax($(".tm-parallax"), 0.30, true);
         // }, true);
-
-        // Media Queries menu
-
-        var mediaMenu = window.matchMedia("(max-width: 1024px)")
-        resizeMenu(mediaMenu) 
-        mediaMenu.addListener(resizeMenu) 
-
-        function resizeMenu(mediaMenu) {
-          if (mediaMenu.matches) { 
-            $("#navbarSupportedContent").css("display", "none");
-          } else {
-            $(".collapse ").css("display", "flex");
-          }
-        }
 
         // Detect window scroll and update navbar
         $(window).scroll(function(e){          
