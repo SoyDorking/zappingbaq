@@ -82,6 +82,12 @@ blockquote {
   }
 }
 
+@media (min-width: 768px) {
+  #logoMobile {
+    display: none;
+  }
+}
+
 .tm-navbar {
   position: fixed;
   width: 100%;
