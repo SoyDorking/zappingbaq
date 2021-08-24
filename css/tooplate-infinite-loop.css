@@ -76,6 +76,19 @@ blockquote {
 
 /* Navbar */
 
+#logoMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #logoDesk {
+    display: none;
+  }
+  #logoMobile {
+    display: block;
+  }
+}
+
 .tm-navbar {
   position: fixed;
   width: 100%;
