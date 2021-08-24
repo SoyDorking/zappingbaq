@@ -447,15 +447,15 @@ https://www.tooplate.com/view/2117-infinite-loop
         });
         
         // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
+        $('body, #tmNav a').on('click', function(){
           $('.navbar-collapse').removeClass('show'); 
         });
 
-        // // Scroll to corresponding section with animation
-        // $('#tmNav').singlePageNav({
-        //   'easing': 'easeInOutExpo',
-        //   'speed': 600
-        // }); 
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav({
+          'easing': 'easeInOutExpo',
+          'speed': 600
+        }); 
         
         // Add smooth scrolling to all links
         // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
