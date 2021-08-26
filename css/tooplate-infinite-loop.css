@@ -686,8 +686,9 @@ p {
   .navbar-collapse .nav-link {
     color: #707070;
     padding-right: 15px;
-    float: left;
     padding-left: 15px;
+    width: 100%;
+    text-align: left;
   }
 }
 

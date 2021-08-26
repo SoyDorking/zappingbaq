@@ -39,19 +39,20 @@ https://www.tooplate.com/view/2117-infinite-loop
                   <a class="nav-link tm-nav-link" id="homeMenu" href="#infinite">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#whatwedo">What We Do</a>
+                  <a class="nav-link tm-nav-link" id="whatwedoMenu" href="#whatwedo">What We Do</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#testimonials">Testimonials</a>
+                <a class="nav-link tm-nav-link" id="testimonialsMenu" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" id="galletyMenu" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
+                  <a class="nav-link tm-nav-link" id="contactMenu" href="#contact">Contact</a>
               </li>                    
             </ul>
           </div>
+          
           <div class="tm-next" id="logoDesk">
             <a href="#infinite" class="navbar-brand">Infinite Loop</a>
           </div>        
@@ -445,10 +446,37 @@ https://www.tooplate.com/view/2117-infinite-loop
               navbarSupportedContent.classList.remove('show');
             }
         }
-        
+
+        $("#whatwedoMenu").click( () => {
+            $("#whatwedoMenu").addClass("current");
+            $("#homeMenu").removeClass("current");
+            $("#testimonialsMenu").removeClass("current");
+            $("#galletyMenu").removeClass("current");
+            $("#contactMenu").removeClass("current");
+        });
+
+        $("#testimonialsMenu").click( () => {
+            $("#testimonialsMenu").addClass("current");
+            $("#homeMenu").removeClass("current");
+            $("#whatwedoMenu").removeClass("current");
+            $("#galletyMenu").removeClass("current");
+            $("#contactMenu").removeClass("current");
+        });
+
         $("#galletyMenu").click( () => {
             $("#galletyMenu").addClass("current");
             $("#homeMenu").removeClass("current");
+            $("#whatwedoMenu").removeClass("current");
+            $("#testimonialsMenu").removeClass("current");
+            $("#contactMenu").removeClass("current");
+        });
+
+        $("#contactMenu").click( () => {
+            $("#contactMenu").addClass("current");
+            $("#homeMenu").removeClass("current");
+            $("#whatwedoMenu").removeClass("current");
+            $("#testimonialsMenu").removeClass("current");
+            $("#galletyMenu").removeClass("current");
         });
 
         // Detect window scroll and update navbar
